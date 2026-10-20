@@ -78,13 +78,13 @@ async fn get_zhang_preset() -> Json<GraphSnapshot> {
     for r in zhang_2014_references() {
         let id = r.id.clone();
         graph.upsert_node(r);
-        graph.add_edge(&id, "W2052126598", 1);
+        graph.add_edge(&id, "W2150462872", 1);
     }
 
     for c in zhang_2014_citations() {
         let id = c.id.clone();
         graph.upsert_node(c);
-        graph.add_edge("W2052126598", &id, 1);
+        graph.add_edge("W2150462872", &id, 1);
     }
 
     graph.current_level = 1;

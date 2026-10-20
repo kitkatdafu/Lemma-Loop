@@ -195,10 +195,10 @@ fn default_max_levels() -> u32 {
     1
 }
 fn default_top_k_in() -> usize {
-    12
+    15
 }
 fn default_top_k_out() -> usize {
-    12
+    15
 }
 fn default_auto_run() -> bool {
     true

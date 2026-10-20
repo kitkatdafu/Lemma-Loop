@@ -14,11 +14,11 @@ import { NodeInspector } from './components/NodeInspector';
 export const App: React.FC = () => {
   const [query, setQuery] = useState<string>('Bounded gaps between primes');
   const [sessionId, setSessionId] = useState<string | null>(null);
-  const [seedId, setSeedId] = useState<string>('W2052126598');
+  const [seedId, setSeedId] = useState<string>('W2150462872');
   const [nodes, setNodes] = useState<PaperNode[]>([]);
   const [edges, setEdges] = useState<CitationEdge[]>([]);
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(
-    'W2052126598'
+    'W2150462872'
   );
   const [expandingNodeIds, setExpandingNodeIds] = useState<Set<string>>(
     new Set()
@@ -30,8 +30,8 @@ export const App: React.FC = () => {
   );
   const [currentLevel, setCurrentLevel] = useState<number>(1);
   const [maxLevels, setMaxLevels] = useState<number>(1);
-  const [topKIn, setTopKIn] = useState<number>(12);
-  const [topKOut, setTopKOut] = useState<number>(12);
+  const [topKIn, setTopKIn] = useState<number>(15);
+  const [topKOut, setTopKOut] = useState<number>(15);
 
   const [creativityMode, setCreativityMode] =
     useState<CreativityMode>('actual');
