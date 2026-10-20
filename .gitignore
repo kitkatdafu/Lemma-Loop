@@ -1,0 +1,11 @@
+# Rust
+backend/target/
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# macOS / IDE
+.DS_Store
+*.log
